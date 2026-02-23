@@ -76,15 +76,17 @@ contactForm.addEventListener('submit', (e) => {
 // Newsletter Form
 const newsletterForm = document.querySelector('.newsletter-form');
 
-newsletterForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const email = newsletterForm.querySelector('input').value;
-    
-    if (email) {
-        alert(`Thank you for subscribing! Updates will be sent to ${email}`);
-        newsletterForm.reset();
-    }
-});
+if (newsletterForm) {
+    newsletterForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const email = newsletterForm.querySelector('input').value;
+        
+        if (email) {
+            alert(`Thank you for subscribing! Updates will be sent to ${email}`);
+            newsletterForm.reset();
+        }
+    });
+}
 
 // Smooth scrolling for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -114,27 +116,6 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// Typing effect for hero text (optional enhancement)
-function typeWriter() {
-    const text = "Web Developer & Digital Creator";
-    const titleElement = document.querySelector('.title');
-    let i = 0;
-    
-    function type() {
-        if (i < text.length) {
-            titleElement.textContent = text.substring(0, i + 1);
-            i++;
-            setTimeout(type, 100);
-        }
-    }
-    
-    // Start typing after 1 second
-    setTimeout(type, 1000);
-}
-
-// Uncomment to enable typing effect
-// window.addEventListener('DOMContentLoaded', typeWriter);
-
 // Skill bars animation on scroll
 const skillBars = document.querySelectorAll('.skill-level');
 
@@ -162,3 +143,35 @@ function randomFloat() {
 
 // Update floating elements position every 5 seconds
 setInterval(randomFloat, 5000);
+function downloadResume() {
+    // Try multiple possible paths
+    const possiblePaths = [
+        'assets/Sandile_Nkosi_Resume.pdf',
+        './assets/Sandile_Nkosi_Resume.pdf',
+        '/assets/Sandile_Nkosi_Resume.pdf',
+        'Sandile_Nkosi_Resume.pdf'
+    ];
+    
+    let downloaded = false;
+    
+    for (let path of possiblePaths) {
+        try {
+            const link = document.createElement('a');
+            link.href = path;
+            link.download = 'Sandile_Nkosi_Resume.pdf';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            downloaded = true;
+            break;
+        } catch (e) {
+            continue;
+        }
+    }
+    
+    if (!downloaded) {
+        alert('Please make sure your resume file is in the assets folder as "Sandile_Nkosi_Resume.pdf"');
+    }
+    
+    return false;
+}

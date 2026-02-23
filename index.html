@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandile Nkosi | Web Developer & Cloud Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Sandile<span>Nkosi</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+               <li>
+    <a href="#" class="btn-resume" onclick="downloadResume()">
+        <i class="fas fa-download"></i> Resume
+    </a>
+</li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h3 class="hello">Hello, I'm</h3>
+                <h1 class="name">Sandile Nkosi</h1>
+                <h2 class="title">Web Developer & Cloud Engineer</h2>
+                <p class="description">
+                    I build exceptional and accessible digital experiences for the web. 
+                    Passionate about clean code, user-friendly design, and solving real-world problems through technology.
+                    AWS & Cisco Certified IT Professional.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View My Work</a>
+                    <a href="#contact" class="btn-secondary">Get In Touch</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/sandilenkosi12" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sandile-nkosi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://credly.com/users/sandile-abel-nkosi" target="_blank"><i class="fas fa-certificate"></i></a>
+                    <a href="mailto:Abelnkosi2000@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <!-- Your Profile Picture -->
+                    <div class="profile-image-container">
+                        <img src="images/profile.jpg.jpeg" alt="Sandile Nkosi" class="profile-photo">
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-element aws">AWS</div>
+                        <div class="floating-element cisco">Cisco</div>
+                        <div class="floating-element cloud">Cloud</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <h3>My Journey into Tech</h3>
+                    <p>
+                        Hi! I'm Sandile Nkosi, a passionate web developer and cloud engineer based in South Africa. 
+                        My journey into tech started with a curiosity about how websites work, 
+                        which quickly turned into a passion for creating digital experiences and cloud solutions.
+                    </p>
+                    <p>
+                        I'm a problem-solver at heart and love turning complex challenges into simple, 
+                        beautiful, and intuitive designs. With multiple AWS and Cisco certifications, I bridge the gap between 
+                        cloud infrastructure and web development. When I'm not coding, you can find me exploring 
+                        new cloud technologies, contributing to open-source projects, or enjoying the outdoors.
+                    </p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="label">Name:</span>
+                            <span class="value">Sandile Nkosi</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location:</span>
+                            <span class="value">Johannesburg, South Africa</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Email:</span>
+                            <span class="value">Abelnkosi2000@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Availability:</span>
+                            <span class="value available">Open to Opportunities</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat-item">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-text">Projects Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2+</div>
+                        <div class="stat-text">Years Learning</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-text">Dedication</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">9</div>
+                        <div class="stat-text">Certifications</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up">
+                    <h3><i class="fas fa-code"></i> Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>HTML5</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>CSS3</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>JavaScript</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>React</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Amazon Web Services (AWS)</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Microsoft Azure</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Google Cloud Platform (GCP)</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>OpenStack</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3><i class="fas fa-tools"></i> Tools & More</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span>Git & GitHub</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>VS Code</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Responsive Design</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Figma</span>
+                            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education & Certifications</h2>
+            
+            <div class="education-content">
+                <!-- Education -->
+                <div class="education-card" data-aos="fade-up">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Diploma in Information Technology</h3>
+                        <p class="edu-institution">Vaal University of Technology</p>
+                        <p class="edu-duration">Expected Graduation: 2025</p>
+                        <p class="edu-description">
+                            Currently pursuing a comprehensive IT diploma with focus on networking, 
+                            software development, and system administration.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- AWS Certifications -->
+                <div class="certifications-grid">
+                    <h3 class="cert-section-title">AWS Certifications</h3>
+                    <div class="certifications-container">
+                        <!-- AWS Cloud 101 -->
+                        <div class="cert-card" data-aos="fade-up">
+                            <div class="cert-header">
+                                <div class="cert-badge">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>AWS Cloud 101</h4>
+                                    <p class="cert-issuer">Amazon Web Services</p>
+                                </div>
+                            </div>
+                            <p class="cert-description">
+                                Introduction to cloud computing, AWS core services, and creating simple cloud applications.
+                            </p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Oct 2023</span>
+                                <span class="cert-status">Verified</span>
+                            </div>
+                        </div>
+
+                        <!-- AWS Compute -->
+                        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="cert-header">
+                                <div class="cert-badge">
+                                    <i class="fas fa-server"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>AWS Compute Services</h4>
+                                    <p class="cert-issuer">Amazon Web Services</p>
+                                </div>
+                            </div>
+                            <p class="cert-description">
+                                Working with Amazon EC2, creating compute instances, and understanding compute types.
+                            </p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Oct 2023</span>
+                                <span class="cert-status">Verified</span>
+                            </div>
+                        </div>
+
+                        <!-- AWS Serverless -->
+                        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="cert-header">
+                                <div class="cert-badge">
+                                    <i class="fas fa-bolt"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>AWS Serverless</h4>
+                                    <p class="cert-issuer">Amazon Web Services</p>
+                                </div>
+                            </div>
+                            <p class="cert-description">
+                                Configuring AWS Lambda functions, SQS, SNS, and API Gateway for scalable applications.
+                            </p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Oct 2023</span>
+                                <span class="cert-status">Verified</span>
+                            </div>
+                        </div>
+
+                        <!-- AWS Machine Learning -->
+                        <div class="cert-card" data-aos="fade-up">
+                            <div class="cert-header">
+                                <div class="cert-badge">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>AWS ML Foundations</h4>
+                                    <p class="cert-issuer">Amazon Web Services</p>
+                                </div>
+                            </div>
+                            <p class="cert-description">
+                                Machine learning fundamentals, ML pipeline, and solving business problems with ML.
+                            </p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Oct 2023</span>
+                                <span class="cert-status">Verified</span>
+                            </div>
+                        </div>
+
+                        <!-- AWS DeepRacer -->
+                        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="cert-header">
+                                <div class="cert-badge">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>AWS DeepRacer</h4>
+                                    <p class="cert-issuer">Amazon Web Services</p>
+                                </div>
+                            </div>
+                            <p class="cert-description">
+                                Reinforcement learning fundamentals and hands-on experience with AWS DeepRacer.
+                            </p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Oct 2023</span>
+                                <span class="cert-status">Verified</span>
+                            </div>
+                        </div>
+
+                        <!-- AWS Security -->
+                        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="cert-header">
+                                <div class="cert-badge">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>AWS Security</h4>
+                                    <p class="cert-issuer">Amazon Web Services</p>
+                                </div>
+                            </div>
+                            <p class="cert-description">
+                                AWS IAM implementation and understanding of AWS security services and best practices.
+                            </p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Oct 2023</span>
+                                <span class="cert-status">Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cisco Certifications -->
+                <div class="certifications-grid">
+                    <h3 class="cert-section-title">Cisco Certifications</h3>
+                    <div class="certifications-container">
+                        <!-- CCNA -->
+                        <div class="cert-card cisco-card" data-aos="fade-up">
+                            <div class="cert-header">
+                                <div class="cert-badge">
+                                    <i class="fas fa-network-wired"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>CCNA: Switching, Routing & Wireless</h4>
+                                    <p class="cert-issuer">Cisco Networking Academy</p>
+                                </div>
+                            </div>
+                            <p class="cert-description">
+                                Switching operations, LAN configuration (wired/wireless), security best practices, 
+                                redundancy protocols, and troubleshooting skills.
+                            </p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Dec 2021</span>
+                                <span class="cert-status">Verified</span>
+                            </div>
+                        </div>
+
+                        <!-- CCNAv7 -->
+                        <div class="cert-card cisco-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="cert-header">
+                                <div class="cert-badge">
+                                    <i class="fas fa-ethernet"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>CCNAv7: Introduction to Networks</h4>
+                                    <p class="cert-issuer">Cisco Networking Academy</p>
+                                </div>
+                            </div>
+                            <p class="cert-description">
+                                Network fundamentals, IP addressing, Ethernet concepts, and network communication.
+                            </p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Jul 2021</span>
+                                <span class="cert-status">Verified</span>
+                            </div>
+                        </div>
+
+                        <!-- IT Essentials -->
+                        <div class="cert-card cisco-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="cert-header">
+                                <div class="cert-badge">
+                                    <i class="fas fa-desktop"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h4>IT Essentials: PC Hardware & Software</h4>
+                                    <p class="cert-issuer">Cisco Networking Academy</p>
+                                </div>
+                            </div>
+                            <p class="cert-description">
+                                PC hardware components, software installation, troubleshooting, and system maintenance.
+                            </p>
+                            <div class="cert-footer">
+                                <span class="cert-date">Issued: Jul 2020</span>
+                                <span class="cert-status">Verified</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credly Profile Link -->
+                <div class="credly-profile" data-aos="fade-up">
+                    <div class="credly-content">
+                        <i class="fas fa-certificate"></i>
+                        <div>
+                            <h4>View All Certifications on Credly</h4>
+                            <p>Access verified digital badges and detailed certification information</p>
+                        </div>
+                    </div>
+                    <a href="https://www.credly.com/users/sandile-abel-nkosi" target="_blank" class="btn-secondary">
+                        <i class="fas fa-external-link-alt"></i> Visit Credly Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: E-Commerce Store -->
+                <div class="project-card" data-aos="flip-left">
+                    <div class="project-image">
+                        <div class="image-placeholder project-img">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Store</h3>
+                        <p>A fully responsive online store with shopping cart, product filtering, and checkout functionality.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Weather Dashboard -->
+                <div class="project-card" data-aos="flip-left" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="image-placeholder project-img">
+                            <i class="fas fa-cloud-sun"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather application with location detection, 5-day forecast, and interactive maps.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>API</span>
+                            <span>Chart.js</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Task Manager App -->
+                <div class="project-card" data-aos="flip-left" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="image-placeholder project-img">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Manager App</h3>
+                        <p>Productivity application with drag & drop tasks, project categories, and progress tracking.</p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>LocalStorage</span>
+                            <span>CSS Grid</span>
+                            <span>Drag API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Packet Tracer Labs -->
+                <div class="project-card" data-aos="flip-left" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="image-placeholder project-img">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cisco Packet Tracer Labs</h3>
+                        <p>Collection of networking labs demonstrating routing, switching, VLANs, and network security configurations using Cisco Packet Tracer.</p>
+                        <div class="project-tech">
+                            <span>Cisco</span>
+                            <span>Routing</span>
+                            <span>Switching</span>
+                            <span>VLANs</span>
+                            <span>CCNA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sandilenkosi12/packettracerlab.git" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i> View Labs
+                            </a>
+                            <a href="https://github.com/sandilenkosi12/packettracerlab.git" target="_blank" class="project-link">
+                                <i class="fas fa-code-branch"></i> Clone Repo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="github-cta">
+                <p>Want to see more? Check out my GitHub for additional projects and code experiments!</p>
+                <a href="https://github.com/sandilenkosi12" target="_blank" class="btn-primary">
+                    <i class="fab fa-github"></i> Visit My GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm currently open to new opportunities, collaborations, or just a friendly chat about tech.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:Abelnkosi2000@gmail.com">Abelnkosi2000@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>Johannesburg, South Africa</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Response Time</h4>
+                                <p>Usually within 24 hours</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-social">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/sandilenkosi12" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/sandile-nkosi" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com/sandile_nkosi" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="https://credly.com/users/sandile-abel-nkosi" target="_blank"><i class="fas fa-certificate"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" placeholder="What is this regarding?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" rows="5" placeholder="Hello Sandile, I'd like to talk about..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">Sandile<span>Nkosi</span></a>
+                    <p>Building the web, one line of code at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to get notified about new projects and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Sandile Nkosi. All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> and <i class="fas fa-code"></i> in South Africa</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript Files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
